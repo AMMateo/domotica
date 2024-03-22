@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "domotica-1d3d4": {
+      "hosting": {
+        "app": [
+          "domotica-1d3d4"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "domotica-1d3d4"
+  }
+}

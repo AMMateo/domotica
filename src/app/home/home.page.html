@@ -1,0 +1,47 @@
+<ion-content [fullscreen]="true">
+  <div class="vertical-container">
+    
+    <div class="contenedorcard">
+      <ion-card class="contenido">
+        <ion-button fill="clear" (click)="toggleVariable('bano')" [color]="buttonColorOn(variables['bano'])" class="custom-button">
+          <ion-icon slot="icon-only" name="{{ variables['bano'] ? 'power' : 'power-outline' }}" [color]="buttonColorOn(variables['bano'])"></ion-icon>
+          <span>baño</span>
+        </ion-button>
+        
+        <ion-button fill="clear" (click)="toggleVariable('cocina')" [color]="buttonColorOn(variables['cocina'])" class="custom-button">
+          <ion-icon slot="icon-only" name="{{ variables['cocina'] ? 'power' : 'power-outline' }}" [color]="buttonColorOn(variables['cocina'])"></ion-icon>
+          <span>cocina</span>
+        </ion-button>
+      </ion-card>
+    </div>
+    
+    <div class="contenedorcard">
+      <ion-card class="contenido">
+        <ion-button fill="clear" (click)="toggleVariable('dormitorio')" [color]="buttonColorOn(variables['dormitorio'])" class="custom-button">
+          <ion-icon slot="icon-only" name="{{ variables['dormitorio'] ? 'power' : 'power-outline' }}" [color]="buttonColorOn(variables['dormitorio'])"></ion-icon>
+          <span>dormitorio</span>
+        </ion-button>
+        
+        <ion-button fill="clear" (click)="toggleVariable('garaje')" [color]="buttonColorOn(variables['garaje'])" class="custom-button">
+          <ion-icon slot="icon-only" name="{{ variables['garaje'] ? 'power' : 'power-outline' }}" [color]="buttonColorOn(variables['garaje'])"></ion-icon>
+          <span>garaje</span>
+        </ion-button>
+      </ion-card>
+    </div>
+    
+    <div class="contenedorcard">
+      <ion-card class="contenido">
+        <ion-button fill="clear" (click)="toggleVariable('sala')" [color]="buttonColorOn(variables['sala'])" class="custom-button">
+          <ion-icon slot="icon-only" name="{{ variables['sala'] ? 'power' : 'power-outline' }}" [color]="buttonColorOn(variables['sala'])"></ion-icon>
+          <span>sala</span>
+        </ion-button>
+        
+        <ion-button fill="clear" (click)="toggleVariable('terraza')" [color]="buttonColorOn(variables['terraza'])" class="custom-button">
+          <ion-icon slot="icon-only" name="{{ variables['terraza'] ? 'power' : 'power-outline' }}" [color]="buttonColorOn(variables['terraza'])"></ion-icon>
+          <span>terraza</span>
+        </ion-button>
+      </ion-card>
+    </div>
+    
+  </div>
+</ion-content>
